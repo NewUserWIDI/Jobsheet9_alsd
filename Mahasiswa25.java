@@ -4,14 +4,21 @@ public class Mahasiswa25 {
     String kelas;
     int nilai;
 
-    Mahasiswa25(String nama, String nim, String kelas) {
-        this.nim = nama;
-        this.nama = nim;
+    public Mahasiswa25(String nama, String nim, String kelas) {
+        this.nama = nama;
+        this.nim = nim;
         this.kelas = kelas;
-        this.nilai = -1; 
+        nilai = -1;
     }
 
-    void tugasDinilai(int nilai) {
+    public void tugasDinilai(int nilai) {
         this.nilai = nilai;
+    }
+
+    public void tampil() {
+        System.out.println("Nama   : " + nama);
+        System.out.println("NIM  : " + nim);
+        System.out.println("Kelas : " + kelas);
+        System.out.println("Nilai : " + nilai);
     }
 }
